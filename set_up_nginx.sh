@@ -1,10 +1,10 @@
 set -ex
 
-echo "Install Nginx"
+echo 'Install Nginx'
 pkg install www/nginx
 
-echo "Enable auto start"
+echo 'Enable auto start'
 sysrc nginx_enable='YES'
 
-echo "Start Nginx"
+echo 'Start Nginx'
 service nginx start
